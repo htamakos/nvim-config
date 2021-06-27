@@ -1,0 +1,147 @@
+# Visual
+[[plugins]]
+repo = 'jacoborus/tender.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+## Utils
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+'''
+
+[[plugins]]
+repo = 'weirongxu/plantuml-previewer.vim'
+hook_add = '''
+let g:plantuml_previewer#save_format = 'svg'
+'''
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'aklt/plantuml-syntax'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+## Format
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'nvim-lua/completion-nvim'
+
+## Window
+[[plugins]]
+repo = 'simeji/winresizer'
+hook_source = '''
+let g:winresizer_vert_resize = 1
+let g:winresizer_horiz_resize = 1
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+	let g:neoterm_autoinsert = 1
+	let g:neoterm_autoscroll = 1
+	let g:neoterm_default_mod = "belowright"
+    let g:neoterm_size = 10
+'''
+
+## Execute
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+## Git
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+## Others
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+#### Javascript
+[[plugins]]
+repo = 'ternjs/tern_for_vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+[[plugins]]
+repo = 'ervandew/supertab'
+
+## LSP
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+hook_source = '''
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+'''
+
+[[plugins]]
+repo = 'jackguo380/vim-lsp-cxx-highlight'
+hook_source = '''
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+'''
+
+## Programming
+### Cpp
+#[[plugins]]
+#repo = 'vim-syntastic/syntastic'
+#hook_source = '''
+#let g:syntastic_cpp_checkers = ['cpplint']
+#let g:syntastic_c_checkers = ['cpplint']
+#let g:syntastic_cpp_cpplint_exec = 'cpplint'
+#" The following two lines are optional. Configure it to your liking!
+#let g:syntastic_check_on_open = 1
+#let g:syntastic_check_on_wq = 0
+#let g:syntastic_quiet_messages = { "type": "style" }
+#'''
+
+### Golang
+#[[plugins]]
+#repo = 'mattn/vim-goimports'
+
+### Javascript
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'alampros/vim-styled-jsx'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'moll/vim-node'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'othree/jspc.vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && yarn install"'
